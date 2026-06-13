@@ -1,0 +1,38 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.10 Safari/537.36" version="29.6.1">
+  <diagram name="Page-1" id="q2UKW_kj5i86ZAVPTdji">
+    <mxGraphModel dx="1402" dy="898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GYU-HkbDj7mBc_RXmlT9-4" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="154" width="110" x="30" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="GYU-HkbDj7mBc_RXmlT9-2" parent="GYU-HkbDj7mBc_RXmlT9-4" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.authenticated_user;" value="" vertex="1">
+          <mxGeometry height="110" width="110" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="GYU-HkbDj7mBc_RXmlT9-3" parent="GYU-HkbDj7mBc_RXmlT9-4" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Paied User" vertex="1">
+          <mxGeometry height="30" width="90" x="10" as="geometry" />
+        </mxCell>
+        <mxCell id="GYU-HkbDj7mBc_RXmlT9-10" edge="1" parent="1" source="GYU-HkbDj7mBc_RXmlT9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;" target="GYU-HkbDj7mBc_RXmlT9-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GYU-HkbDj7mBc_RXmlT9-11" edge="1" parent="1" source="GYU-HkbDj7mBc_RXmlT9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.571;entryY=0.286;entryDx=0;entryDy=0;entryPerimeter=0;" target="GYU-HkbDj7mBc_RXmlT9-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GYU-HkbDj7mBc_RXmlT9-12" connectable="0" parent="GYU-HkbDj7mBc_RXmlT9-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Text" vertex="1">
+          <mxGeometry relative="1" x="-0.3778" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GYU-HkbDj7mBc_RXmlT9-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Archive API" vertex="1">
+          <mxGeometry height="90" width="240" x="310" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="GYU-HkbDj7mBc_RXmlT9-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="NPL Services API" vertex="1">
+          <mxGeometry height="70" width="175" x="610" y="320" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

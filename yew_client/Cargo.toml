@@ -1,0 +1,19 @@
+[package]
+name = "yew_webClient"
+version = "0.1.1"
+edition = "2024"
+authors = ["Med Tawfik AMHIL mohamedtawfik.amhil@gmail.com"]
+
+[dependencies]
+gloo-console = "0.3.0"
+gloo-net = "0.6.0"
+gloo-timers = { version = "0.3", features = ["futures"] }
+js-sys = "0.3"
+reqwest = { version = "0.12.24", features = ["json"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+wasm-bindgen = "0.2.105"
+wasm-bindgen-futures = "0.4.55"
+web-sys = { version = "0.3.82", features = ["HtmlInputElement", "Window"] }
+yew = { version = "0.21.0", features = ["csr"] }
+yew-router = "0.18.0"

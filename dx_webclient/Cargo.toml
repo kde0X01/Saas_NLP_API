@@ -1,0 +1,38 @@
+[package]
+name = "dx_webclient"
+version = "0.1.0"
+authors = ["Kde0x01 <kde0x01@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = { version = "0.7.9", features = ["router"] }
+reqwest = { version = "0.13.3", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+gloo-console = { version = "0.4.0" }
+gloo-net = "0.7.0"
+gloo-timers = { version = "0.4.0", features = ["futures"] }
+web-sys = { version = "0.3.98", features = [
+    "HtmlInputElement",
+    "Window",
+    "Url",
+    "Storage",
+    "UrlSearchParams",
+] }
+wasm-bindgen = { version = "0.2" }
+wasm-bindgen-futures = "0.4"
+
+[features]
+default = ["web"]
+# The feature that are only required for the web = ["dioxus/web"] build target should be optional and only enabled in the web = ["dioxus/web"] feature
+web = ["dioxus/web"]
+# The feature that are only required for the desktop = ["dioxus/desktop"] build target should be optional and only enabled in the desktop = ["dioxus/desktop"] feature
+desktop = ["dioxus/desktop"]
+# The feature that are only required for the mobile = ["dioxus/mobile"] build target should be optional and only enabled in the mobile = ["dioxus/mobile"] feature
+mobile = ["dioxus/mobile"]
+
+# Added my me
+[package.metadata.wasm-opt]
+enable = false

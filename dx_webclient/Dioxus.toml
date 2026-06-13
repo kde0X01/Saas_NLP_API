@@ -1,0 +1,26 @@
+[application]
+dev_server_port = 8000
+
+# How can i change the default port of the dev server?
+# The default port is 8080, but you can change it by setting the `dev_server_port` field in the [application] section of your Dioxus.toml file. For example:
+# dev_server_port = 3000
+
+[web.app]
+
+# HTML title tag content
+title = "dx_webclient"
+
+# include `assets` in web platform
+[web.resource]
+
+# Additional CSS style files
+style = []
+
+# Additional JavaScript files
+script = []
+
+[web.resource.dev]
+
+# Javascript code file
+# serve: [dev-server] only
+script = []

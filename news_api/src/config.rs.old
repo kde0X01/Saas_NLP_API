@@ -1,0 +1,70 @@
+// Config File: src/config.rs
+
+use serde::Deserialize;
+use std::default::Default;
+
+#[derive(Deserialize, Debug)]
+pub struct Config {
+    #[serde(default = "default_addr")]
+    pub bind_addr: String,
+    #[serde(default = "default_key")]
+    pub tls_key: String,
+    #[serde(default = "default_cert")]
+    pub tls_cert: String,
+    #[serde(default = "default_log_level")]
+    pub log_level: String,
+    // Authentication fields
+    #[serde(default = "default_google_client_id")]
+    pub google_client_id: String,
+    #[serde(default = "default_google_client_secret")]
+    pub google_client_secret: String,
+    #[serde(default = "default_redirect_url")]
+    pub redirect_url: String,
+}
+
+pub fn default_addr() -> String {
+    "127.0.0.1:8088".to_string()
+}
+
+pub fn default_key() -> String {
+    "Certs/key.pem".to_string()
+}
+
+pub fn default_cert() -> String {
+    "Certs/cert.pem".to_string()
+}
+
+pub fn default_log_level() -> String {
+    "info".to_string()
+}
+
+impl Default for Config {
+    fn default() -> Self {
+        Config {
+            bind_addr: default_addr(),
+            tls_key: default_key(),
+            tls_cert: default_cert(),
+            log_level: default_log_level(),
+            google_client_id: default_google_client_id(),
+            google_client_secret: default_google_client_secret(),
+            redirect_url: default_redirect_url(),
+        }
+    }
+}
+
+// DB Config.
+pub const DB_URL: &str = "db/db_news.db";
+
+// Auth Config.
+
+pub fn default_google_client_id() -> String {
+    std::env::var("GOOGLE_CLIENT_ID").unwrap_or_default()
+}
+
+pub fn default_google_client_secret() -> String {
+    std::env::var("GOOGLE_CLIENT_SECRET").unwrap_or_default()
+}
+
+pub fn default_redirect_url() -> String {
+    "http://localhost:8080/auth/callback".to_string()
+}

@@ -1,0 +1,11 @@
+# Trunk configuration file
+[build]
+target = "index.html"
+release = false
+dist = "dist"
+filehash = true
+
+[serve]
+addresses = ["127.0.0.1"]
+port = 8000
+open = false
